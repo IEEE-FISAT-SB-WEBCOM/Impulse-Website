@@ -1,0 +1,172 @@
+css
+Copy code
+/* Events */
+.Event {
+    background-color: #34000C;
+    height: 906px;
+}
+
+/* Centering the content */
+.Events {
+    background-color: #34000C;
+    height: 906px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Subdivision styling */
+.Events .subdiv {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+}
+
+/* Main container styling */
+.Events .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px;
+}
+
+/* Heading styling */
+.Events .h1 {
+    display: grid;
+    grid-template-columns: repeat(6, 40px);
+    grid-template-rows: repeat(3, 20px) repeat(2, 40px);
+    align-self: flex-start;
+    margin: 40px;
+}
+
+/* Specific positioning of elements in the grid */
+.Events .h1 .hash {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.Events .h1 .about {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+}
+
+/* Heading text styling */
+.Events .h1 p {
+    color: white;
+    margin: 0;
+    font-size: 65px;
+    grid-column: 1 / 7;
+    grid-row: 4 / 5;
+}
+
+/* Paragraph text styling */
+.Events p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+/* Logos container styling */
+.Events .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Individual logo styling */
+.Events .logos img {
+    height: 40px;
+    width: 100px;
+    color: white;
+}
+/* Worshops */
+.workshop
+{
+    background-image: url(img/Rectangle\ 90.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    padding: 50px;    
+}
+ .content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.workshop .heading
+{
+    display: grid;
+    grid-template-columns: repeat(8,40px);
+    grid-template-rows: repeat(4,30px) ;
+    align-self: flex-end;
+}
+.heading .hash
+{
+    grid-column: 6/7;
+    grid-row: 1/2;
+}
+.heading .our
+{
+    grid-row: 1/2;
+    grid-column: 7/8;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.heading p
+{
+    color: white;
+    font-size: 50px;
+    margin: 0;
+    grid-row: 3/4;
+    grid-column:2/8 ;
+}
+.workshop .shops
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.shops .box
+{
+    width:300px;
+    height: 280px;
+    background-color: black;
+    margin: 20px;
+    border: gray solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.box h3
+{
+    font-family: 'Clash Display', sans-serif;
+    color: white;
+    font-size: 36px;
+    margin: 20px;
+}
+.box a
+{
+    text-decoration: none;
+    width: 170px;
+    padding: 5px;
+    text-align: center;
+    background-color: #900022;
+    color: white;
+    font-size: 18px;
+    margin: 20px;
+    
+}
+.box a:hover
+{
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
