@@ -1,28 +1,31 @@
-css
-Copy code
-/* Events */
+
+*
+{
+ margin: 0;
+ padding: 0;
+}
 .Event {
     background-color: #34000C;
-    height: 906px;
+    height: 100%;
+    margin: 0;
 }
 
-/* Centering the content */
 .Events {
+
     background-color: #34000C;
-    height: 906px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 }
 
-/* Subdivision styling */
 .Events .subdiv {
     display: flex;
     flex-direction: column;
     margin: 100px;
 }
 
-/* Main container styling */
 .Events .main {
     display: flex;
     flex-direction: row;
@@ -31,7 +34,6 @@ Copy code
     margin: 100px;
 }
 
-/* Heading styling */
 .Events .h1 {
     display: grid;
     grid-template-columns: repeat(6, 40px);
@@ -40,7 +42,6 @@ Copy code
     margin: 40px;
 }
 
-/* Specific positioning of elements in the grid */
 .Events .h1 .hash {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
@@ -51,7 +52,6 @@ Copy code
     grid-row: 1 / 2;
 }
 
-/* Heading text styling */
 .Events .h1 p {
     color: white;
     margin: 0;
@@ -60,7 +60,6 @@ Copy code
     grid-row: 4 / 5;
 }
 
-/* Paragraph text styling */
 .Events p {
     color: white;
     font-family: "Poppins", sans-serif;
@@ -69,19 +68,76 @@ Copy code
     font-size: 18px;
 }
 
-/* Logos container styling */
 .Events .logos {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 50px;
+    padding: 10px;
 }
 
-/* Individual logo styling */
 .Events .logos img {
     height: 40px;
     width: 100px;
     color: white;
 }
+@media(max-width:850px)
+{
+   .Events .main
+   {
+    display: flex;
+    flex-direction: column;
+   } 
+   .Events .h1
+   {
+    align-self: center;
+   }
+   .Events .logos img
+   {
+     width: 80px;
+     margin: 15px;
+   }
+
+}
+@media(max-width:500px)
+{
+    .Events p
+    {
+        font-size: 14px;
+    }
+}
+@media(max-width:400px)
+{
+   
+    .Events p
+    {
+        margin: 5px;
+        font-size: 12px;
+        padding: 5px;
+    }
+    .Events .logos{
+        height: auto;
+        padding: 20px;
+        margin-left: 57px;
+        margin-right: 57px;
+    }   
+    .Events .logos img
+    {
+       width: 60px;
+       margin: 20px;
+    }
+    
+}
+@media(max-width:350px)
+{
+    .Events p
+    {
+        font-size: 11px
+    }
+}
+
+
 /* Worshops */
 .workshop
 {
@@ -89,7 +145,7 @@ Copy code
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 100%;
     padding: 50px;    
 }
  .content
@@ -100,6 +156,7 @@ Copy code
 }
 .workshop .heading
 {
+    width: fit-content;
     display: grid;
     grid-template-columns: repeat(8,40px);
     grid-template-rows: repeat(4,30px) ;
@@ -169,4 +226,62 @@ Copy code
     color: black;
     transition: 1s;
 }
+@media (max-width: 800px) 
+{
+    .shops .box{
+        width: 40%;
+    }
+    .box h3{
+        font-size: 30px;
+    }
+}
+@media (max-width: 620px) {
+    .box h3
+    {
+        font-size: 25px;
+    }
+    .box a
+    {
+        width: 70%;
+    }
+    
+}
+ @media (max-width:500px)
+ {
+    .workshop .heading 
+    {
+        grid-template-columns: repeat(8,30px);
+        grid-template-rows: repeat(4,30px) ;
+        align-self: center;
+    }
+    .workshop .heading img
+    {
+        width: 60px;
+    }
+    .workshop .heading p
+    {
+        font-size: 40px;
+    }
 
+    .shops .box{
+        width: 80%;
+        height: 200px;
+    }
+ } 
+ @media (max-width:300px)
+ {
+    .workshop .heading 
+    {
+        grid-template-columns: repeat(8,25px);
+        grid-template-rows: repeat(4,30px) ;
+        align-self: center;
+    }
+    .workshop .heading img
+    {
+        width: 50px;
+    }
+    .workshop .heading p
+    {
+        font-size: 30px;
+    }
+ }
