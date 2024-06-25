@@ -8,13 +8,15 @@ document.addEventListener('DOMContentLoaded', function () {
             if (openMenu.classList.contains('show')) {
                 openMenu.classList.remove('show');
                 setTimeout(() => {
-                    openMenu.style.display = 'none';
-                }, 500); 
+                    openMenu.style.visibility = 'hidden';
+                    openMenu.style.opacity = '0';
+                }, 500); // Match the duration of the transition
             } else {
-                openMenu.style.display = 'flex';
+                openMenu.style.visibility = 'visible';
+                openMenu.style.opacity = '1';
                 setTimeout(() => {
                     openMenu.classList.add('show');
-                }, 0); 
+                }, 0); // Allow visibility and opacity changes to be applied before transition
             }
         });
     });
@@ -23,8 +25,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (openMenu.classList.contains('show')) {
             openMenu.classList.remove('show');
             setTimeout(() => {
-                openMenu.style.display = 'none';
-            }, 500);
+                openMenu.style.visibility = 'hidden';
+                openMenu.style.opacity = '0';
+            }, 500); // Match the duration of the transition
         }
     });
 });

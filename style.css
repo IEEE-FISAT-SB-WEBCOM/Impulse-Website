@@ -59,6 +59,9 @@
   position: fixed;
   top: -800px;
   justify-content: space-between;
+  transition: top 0.5s ease;
+  visibility: hidden;
+  opacity: 0;
 }
 .open-menu i{
   font-size: 350px;
