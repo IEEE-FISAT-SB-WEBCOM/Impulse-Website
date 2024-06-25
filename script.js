@@ -10,13 +10,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 setTimeout(() => {
                     openMenu.style.visibility = 'hidden';
                     openMenu.style.opacity = '0';
-                }, 500); // Match the duration of the transition
+                }, 500);
             } else {
                 openMenu.style.visibility = 'visible';
                 openMenu.style.opacity = '1';
                 setTimeout(() => {
                     openMenu.classList.add('show');
-                }, 0); // Allow visibility and opacity changes to be applied before transition
+                }, 0); 
             }
         });
     });
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
             setTimeout(() => {
                 openMenu.style.visibility = 'hidden';
                 openMenu.style.opacity = '0';
-            }, 500); // Match the duration of the transition
+            }, 500); 
         }
     });
 });
