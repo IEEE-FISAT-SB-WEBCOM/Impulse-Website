@@ -1,15 +1,8 @@
 
-*
-{
- margin: 0;
- padding: 0;
-}
 .Event {
     background-color: #34000C;
     height: 100%;
-    margin: 0;
 }
-
 .Events {
 
     background-color: #34000C;
@@ -17,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 
 }
 
 .Events .subdiv {
