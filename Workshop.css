@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    background: #000;
+}
+.heading{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+}
+.heading .name{
+    padding: 0 30px;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    gap: 50px;
+    width: 50%;
+
+}
+.heading a{
+    padding: 20px 100px;
+    background: red;
+    margin-right: 30px;
+}
+
+.heading a:hover{
+    cursor: pointer;
+    transition: all 0.8s;
+    background: white;
+    color:black;
+}
+.content{
+    width: 80%;
+}
