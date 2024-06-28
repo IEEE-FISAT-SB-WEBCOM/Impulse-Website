@@ -87,8 +87,91 @@
 .open-menu .list ul li{
   cursor: pointer;
 }
-
-
+@media (max-width: 912px) {
+  .nav {
+    background: #000;
+    width: 92%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    padding: 0 32.5px;
+    color: white;
+    justify-content: space-between;
+    margin: 0 auto; 
+  }
+  .nav logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+  }
+  .nav img {
+    width: 200px;
+    height: auto;
+  }
+  .nav .menu {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 25px;
+  }
+  
+  .nav .menu a {
+    padding: 10px 40px;
+    background: #610017;
+  }
+  
+  .nav .menu i {
+    font-size: xx-large;
+  }
+  .nav .menu i, a:hover {
+    cursor: pointer;
+  }
+  
+  .open-menu {
+    transform: translate(-10%, 0); 
+    background: black;
+    width: 70%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    padding: 100px;
+    z-index: 10;
+    position: fixed;
+    top: -800px;
+    justify-content: space-between;
+    transition: top 0.5s ease;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .open-menu i {
+    font-size: 200px;
+    color: white;
+  }
+  .open-menu.show {
+    display: flex;
+    top: 0;
+    margin-top: 100px;
+  }
+  .open-menu i:hover {
+    cursor: pointer;
+  }
+  
+  .open-menu .list ul {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 30px;
+    font-size: 40px;
+  }
+  .open-menu .list ul li {
+    cursor: pointer;
+  }
+}
 
 
 
@@ -635,7 +718,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 50%;
+    height: 100%;
     
   }
   .fcontent{
@@ -645,7 +728,7 @@
 
   }
   .footer iframe{
-    height: 60%;
+    height: 90%;
     width: 85%;
   
   }
