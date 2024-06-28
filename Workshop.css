@@ -61,7 +61,6 @@ body{
 
 .spkr{
     width: 80%;
-    background: red;
     display: flex;
     flex-direction: row;
     margin:50px 0;
@@ -84,3 +83,84 @@ body{
 }
 
 
+@media (max-width: 640px) {
+    .heading{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        place-items: center;
+    }
+    .heading .name{
+        padding: 0 5px;
+        font-size: 15px;
+
+        display: flex;
+        flex-direction: row;
+        place-items: center;
+        justify-content: flex-start;
+        height: 100%;
+        gap: 50px;
+        width: 50%;
+    
+    }
+    .heading .reg{
+        padding: 12px 20px;
+        background: red;
+        margin-right: 30px;
+    }
+    
+    .heading i{
+        display: none;
+    }
+    
+    .heading .reg:hover{
+        cursor: pointer;
+        transition: all 0.8s;
+        background: white;
+        color:black;
+    }
+    .content{
+        width: 90%;
+    }
+    
+    .content img{
+        width: 100%;
+        height: 190px;
+        margin: 50px 0;
+        
+    }
+    
+    
+    .spkr{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .spkr img{
+        height: 280px;
+        width: 300px;
+        margin: 50px 0;
+    
+    }
+    
+    .spkr div{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-right: 40px;
+
+    
+    }
+    
+
+
+
+
+
+}
