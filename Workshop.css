@@ -31,13 +31,17 @@ body{
     width: 50%;
 
 }
-.heading a{
-    padding: 20px 100px;
+.heading .reg{
+    padding: 12px 100px;
     background: red;
     margin-right: 30px;
 }
 
-.heading a:hover{
+.heading i:hover{
+    cursor: pointer;
+}
+
+.heading .reg:hover{
     cursor: pointer;
     transition: all 0.8s;
     background: white;
@@ -46,3 +50,37 @@ body{
 .content{
     width: 80%;
 }
+
+.content img{
+    width: 100%;
+    height: 300px;
+    margin: 90px 0;
+    
+}
+
+
+.spkr{
+    width: 80%;
+    background: red;
+    display: flex;
+    flex-direction: row;
+    margin:50px 0;
+}
+
+.spkr img{
+    height: 400px;
+    width: 400px;
+
+}
+
+.spkr div{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    place-items: start;
+    justify-content: center;
+    margin-left: 40px;
+
+}
+
+
