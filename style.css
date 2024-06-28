@@ -358,7 +358,9 @@ button::after {
   }
 }
 
+@media (max-width: 850px){
 
+}
 
 
 
@@ -718,7 +720,7 @@ button::after {
   font-family: "Poppins", sans-serif;
   width: 100%;
   bottom: 0;
-  gap: 200px;
+  gap: 180px;
   flex-direction: row;
   justify-content: space-evenly;
 }
