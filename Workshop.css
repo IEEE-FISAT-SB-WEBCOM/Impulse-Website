@@ -11,6 +11,93 @@ body{
     place-items: center;
     background: #000;
 }
+
+.nav {
+    background: #000;
+    width: 92%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    padding: 0 57.5px;
+    color: white;
+    justify-content: space-between;
+  }
+  .nav logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+  }
+  .nav img {
+    width: 200px;
+    height: auto;
+  }
+  .nav .menu {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 25px;
+  }
+  
+  .nav .menu a {
+    padding: 10px 40px;
+    background: #34000c;
+  }
+  
+  .nav .menu i {
+      
+    font-size: xx-large;
+  }
+  .nav .menu i,a:hover {
+      cursor: pointer;
+      
+    }
+  
+  .open-menu{
+    background: #000;
+    width: 75%;
+    height:300px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+   padding: 100px;
+    z-index: 10;
+    position: fixed;
+    top: -800px;
+    justify-content: space-between;
+    transition: top 0.5s ease;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .open-menu i{
+    font-size: 350px;
+    color: white;
+  }
+  .open-menu.show {
+    display: flex;
+    top: 0; 
+    margin-top: 100px;
+  }
+  .open-menu i:hover{
+    cursor: pointer;
+  }
+  
+  .open-menu .list ul{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 30px;
+    font-size: 40px;
+  }
+  .open-menu .list ul li{
+    cursor: pointer;
+  }
+  
+  
 .heading{
     width: 80%;
     height: 200px;
@@ -164,3 +251,63 @@ body{
 
 
 }
+
+/* Footer */
+.footer {
+  background: #000;
+  font-family: "Poppins", sans-serif;
+  height: 611px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  width: 100%;
+}
+.footer img {
+  translate: 0px -150px;
+}
+
+.gep{
+  position: relative;
+  top: 100px;
+}
+#webcom{
+  text-decoration: none;
+  color: white;
+}
+
+#webcom:hover{
+  text-decoration: none;
+  color: red;
+}
+
+.footer-content {
+  margin-top: 100px;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  bottom: 0;
+  gap: 200px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-content p {
+  color: rgb(134, 134, 134);
+  font-size: small;
+  margin-top: 20px;
+}
+.footer .rights {
+  margin-top: 20px;
+  display: flex;
+  width: 88%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#gsw{
+  position: relative;
+  top: -136px;
+}
+
+

@@ -3,9 +3,191 @@
   padding: 0;
 }
 
+#webcom{
+  text-decoration: none;
+  color: white;
+}
+
+#webcom:hover{
+  text-decoration: none;
+  color: red;
+}
+
+.container-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "bt-1 bt-2 bt-3"
+    "bt-4 bt-5 bt-6";
+  position: relative;
+  perspective: 800;
+  padding: 0;
+  width: 135px;
+  height: 47px;
+  transition: all 0.3s ease-in-out;
+}
+
+.container-button:active {
+  transform: scale(0.95);
+}
+
+.hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+}
+
+.bt-1 {
+  grid-area: bt-1;
+}
+
+.bt-2 {
+  grid-area: bt-2;
+}
+
+.bt-3 {
+  grid-area: bt-3;
+}
+
+.bt-4 {
+  grid-area: bt-4;
+}
+
+.bt-5 {
+  grid-area: bt-5;
+}
+
+.bt-6 {
+  grid-area: bt-6;
+}
+
+.bt-1:hover ~ button {
+  transform: rotateX(15deg) rotateY(-15deg) rotateZ(0deg);
+  box-shadow: -2px -2px #18181888;
+}
+
+.bt-1:hover ~ button::after {
+  animation: shake 0.5s ease-in-out 0.3s;
+  text-shadow: -2px -2px #18181888;
+}
+
+.bt-3:hover ~ button {
+  transform: rotateX(15deg) rotateY(15deg) rotateZ(0deg);
+  box-shadow: 2px -2px #18181888;
+}
+
+.bt-3:hover ~ button::after {
+  animation: shake 0.5s ease-in-out 0.3s;
+  text-shadow: 2px -2px #18181888;
+}
+
+.bt-4:hover ~ button {
+  transform: rotateX(-15deg) rotateY(-15deg) rotateZ(0deg);
+  box-shadow: -2px 2px #18181888;
+}
+
+.bt-4:hover ~ button::after {
+  animation: shake 0.5s ease-in-out 0.3s;
+  text-shadow: -2px 2px #18181888;
+}
+
+.bt-6:hover ~ button {
+  transform: rotateX(-15deg) rotateY(15deg) rotateZ(0deg);
+  box-shadow: 2px 2px #18181888;
+}
+
+.bt-6:hover ~ button::after {
+  animation: shake 0.5s ease-in-out 0.3s;
+  text-shadow: 2px 2px #18181888;
+}
+
+.hover:hover ~ button::before {
+  background: transparent;
+}
+
+.hover:hover ~ button::after {
+  content: "Register";
+  top: -150%;
+  transform: translate(-50%, 0);
+  font-size: 34px;
+  color: #900022;
+}
+
+button {
+  position: absolute;
+  padding: 0;
+  width: 135px;
+  height: 47px;
+  background: transparent;
+  font-size: 17px;
+  font-weight: 900;
+  border: 3px solid #900022;
+  transition: all 0.3s ease-in-out;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 135px;
+  height: 47px;
+  background-color: #900022;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+button::after {
+  content: "Register";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 135px;
+  height: 47px;
+  background-color: transparent;
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 47px;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+
+#rizz{
+  position: relative;
+  top: 23px;
+}
+@keyframes shake {
+  0% {
+    left: 45%;
+  }
+
+  25% {
+    left: 54%;
+  }
+
+  50% {
+    left: 48%;
+  }
+
+  75% {
+    left: 52%;
+  }
+
+  100% {
+    left: 50%;
+  }
+}
 .nav {
   background: #000;
-  width: 92%;
+  width: 95%;
   height: 125px;
   display: flex;
   flex-direction: row;
@@ -35,6 +217,8 @@
 .nav .menu a {
   padding: 10px 40px;
   background: #34000c;
+ 
+
 }
 
 .nav .menu i {
@@ -55,7 +239,7 @@
   flex-direction: row;
   place-items: center;
  padding: 100px;
-  z-index: 10;
+ z-index: 100;
   position: fixed;
   top: -800px;
   justify-content: space-between;
@@ -88,6 +272,26 @@
   cursor: pointer;
 }
 
+
+
+/* Hero section */
+#hero{
+  background-image: url(/img/Frame\ 44.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  padding: 50px;
+}
+
+.herolist {
+  width: 100%;
+  height: 713px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
 
 /* Speakers */
@@ -288,6 +492,13 @@
   height: 100%;
   padding: 50px;
 }
+
+.workshop-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: [gap value]; /* Optional: Add spacing between boxes */
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -327,7 +538,7 @@
   width: 300px;
   height: 280px;
   background-color: black;
-  margin: 20px;
+  margin: 50px;
   border: gray solid 1px;
   display: flex;
   flex-direction: column;
@@ -402,7 +613,10 @@
     font-size: 30px;
   }
 }
-
+.rizz{
+  position: relative;
+  top: -23px;
+}
 /* Pricing */
 
 .pricing {
@@ -465,6 +679,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  top: -20px;
 }
 
 @media (max-width: 600px) {
@@ -485,7 +701,7 @@
 .footer {
   background: #000;
   font-family: "Poppins", sans-serif;
-  height: 900px;
+  height: 1000px;
   display: flex;
   flex-direction: column;
   color: white;
@@ -520,5 +736,9 @@
   justify-content: space-between;
 }
 
+#gsw{
+  position: relative;
+  top: -136px;
+}
 
 

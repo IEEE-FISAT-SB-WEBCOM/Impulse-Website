@@ -26,7 +26,7 @@
     <!-- Navbar -->
     <nav class="nav">
       <div class="logo">
-        <img src="/Impulse-Website//img/Aasset 5 2.png" />
+        <img src="/img/Aasset.png" />
       </div>
       <div class="menu">
         <a>Register</a>
@@ -42,25 +42,121 @@
       
       <div class="list">
         <ul>
-          <l1><a>Speakers</a></l1>
-          <l1><a>About Event</a></l1>
-          <l1><a>Workshops</a></l1>
-          <l1><a>Pricing</a></l1>
-          <l1><a>Location</a></l1>
+          <li><a>Speakers</a></li>
+          <li><a>About Event</a></li>
+          <li><a>Workshops</a></li>
+          <li><a>Pricing</a></li>
+          <li><a>Location</a></li>
 
         </ul>
       </div>
     </div>
 
+<!-- Hero section -->
+<section id="hero" class="hero" class="parallax-section">
+    <div class="content" class="speakercard">
+        <div class="marqueee">
+            <img src="img/strip.png" alt="Scrolling Image" class="scrolling-imagee" />
+        </div>
+        <div class="marqueeee">
+            <img src="img/strip.png" alt="Scrolling Image" class="scrolling-imagee" />
+        </div>
+        <div class="herolist">
+          <div class="iframe-container">
+            <iframe
+            src="/img/Rectangle 1514.png" 
+            style="border: 0; width: 600px; height: 400px; z-index: 50;"
+            frameborder="0"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          </div>
+        </div>
+        <div class="marquee">
+            <img src="img/Aasset.png" alt="Scrolling Image" class="scrolling-image" />
+        </div>
+    </div>
+</section>
 
+  <style>
+.iframe-container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  z-index: 50;
+  background-color: black;
+  overflow: hidden; /* Ensure content doesn't overflow outside */
+}
 
+.marqueee {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: rotate(15deg);
+  z-index: 1; /* Ensure the marquee is behind the iframe */
+}
+
+.marqueeee {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: rotate(345deg);
+  z-index: 1; /* Ensure the marquee is behind the iframe */
+}
+
+.scrolling-imagee {
+  position: absolute;
+  top: 440px; /* Adjust top position as needed */
+  left: 0; /* Adjust left position as needed */
+  width: auto; /* Set the width to auto to allow natural size */
+  height: 20%; /* Set height to match container height */
+  animation: scroll 7s linear infinite; /* Adjust animation duration and timing function */
+  transform: rotate(45deg); /* Rotate image by 45 degrees */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%); /* Start from right */
+  }
+  100% {
+    transform: translateX(-100%); /* Slide image completely to the left */
+  }
+}
+
+/* @keyframes scroll {
+  0% {
+    transform: translate(-50%, 0%) rotate(45deg);
+  }
+  100% {
+    transform: translate(-50%, 50%) rotate(45deg);
+  }
+} */
+  .marquee{
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .scrolling-image {
+    display: inline-block;
+    animation: scroll 5s linear infinite;
+    transform: rotate(45deg);
+  }
+
+  </style>
+  
 
 
 
     <!-- Speakers -->
 
-    <section id="workshop" class="workshop">
-      <div class="content">
+    <section id="workshop" class="workshop" class="parallax-section">
+      <div class="content" class="speakercard">
         <div class="heading">
           <p style="font-family: 'Clash Display', sans-serif">Speakers</p>
           <img src="img/Our.png" alt="" class="our" />
@@ -70,9 +166,9 @@
         <div class="speakerlist">
           <div class="speakercard">
             <div class="spkrbg">
-j
             </div>
             <div class="speakerdet">
+              <img src="/img/Frame 56.png" alt="" id="gsw">
               <h3>Akhil Gireesh</h3>
               <p>Top G</p>
             </div>
@@ -83,6 +179,7 @@ j
 j
             </div>
             <div class="speakerdet">
+              <img src="/img/Frame 56.png" alt="" id="gsw">
               <h3>Akhil Gireesh</h3>
               <p>Top G</p>
             </div>
@@ -93,6 +190,7 @@ j
 j
             </div>
             <div class="speakerdet">
+              <img src="/img/Frame 56.png" alt="" id="gsw">
               <h3>Akhil Gireesh</h3>
               <p>Top G</p>
             </div>
@@ -107,8 +205,8 @@ j
       </div>
     </section>
     <!-- Events -->
-    <section id="Events" class="Event">
-      <div class="Events">
+    <section id="Events" class="Event" class="parallax-section">
+      <div class="Events" class="speakercard">
         <div class="Subdiv">
           <div class="main">
             <div class="Event h1">
@@ -157,8 +255,8 @@ j
     </section>
 
     <!-- Workshops  -->
-    <section id="workshop" class="workshop">
-      <div class="content">
+    <section id="workshop" class="workshop" class="parallax-section">
+      <div class="content" class="speakercard">
         <div class="heading">
           <p style="font-family: 'Clash Display', sans-serif">Workshops</p>
           <img src="img/Our.png" alt="" class="our" />
@@ -177,25 +275,28 @@ j
             <h3>No Code</h3>
             <a href="">Read More</a>
           </div>
-          <div class="box 4">
-            <h3>cloud computing</h3>
-            <a href="">Read More</a>
-          </div>
-          <div class="box 5">
-            <h3>social media marketing</h3>
-            <a href="">Read More</a>
-          </div>
-          <div class="box 6">
-            <h3>cocunut shell art</h3>
-            <a href="">Read More</a>
-          </div>
+        </div>
+        <div class="shops">
+
+            <div class="box 4">
+              <h3>cloud computing</h3>
+              <a href="">Read More</a>
+            </div>
+            <div class="box 5">
+              <h3>social media marketing</h3>
+              <a href="">Read More</a>
+            </div>
+            <div class="box 6">
+              <h3>cocunut shell art</h3>
+              <a href="">Read More</a>
+            </div>
         </div>
       </div>
     </section>
 
     <!-- Pricing -->
-    <section id="pricing" class="pricing">
-      <div class="content">
+    <section id="pricing" class="pricing" class="parallax-section">
+      <div class="content" class="speakercard">
         <div class="heading">
           <p style="font-family: 'Clash Display', sans-serif">Pricing</p>
           <img src="img/Our.png" alt="" class="our" />
@@ -220,9 +321,20 @@ j
               <p>Goodies</p>
             </div>
 
-            <h2>RS.699</h2>
+            <h2 class="rizz">RS.699</h2>
 
-            <a>Register</a>
+            <!-- <a>Register</a> -->
+
+            <div class="container-button">
+                <div class="hover bt-1"></div>
+                <div class="hover bt-2"></div>
+                <div class="hover bt-3"></div>
+                <div class="hover bt-4"></div>
+                <div class="hover bt-5"></div>
+                <div class="hover bt-6"></div>
+                <button></button>
+              </div>
+
           </div>
           <div class="card">
             <h3>EARLY BIRD</h3>
@@ -242,9 +354,18 @@ j
               <p>Goodies</p>
             </div>
 
-            <h2>RS.699</h2>
+            <h2 class="rizz">RS.699</h2>
 
-            <a>Register</a>
+            <!-- <a>Register</a> -->
+            <div class="container-button">
+                <div class="hover bt-1"></div>
+                <div class="hover bt-2"></div>
+                <div class="hover bt-3"></div>
+                <div class="hover bt-4"></div>
+                <div class="hover bt-5"></div>
+                <div class="hover bt-6"></div>
+                <button></button>
+              </div>
           </div>
           <div class="card">
             <h3>NON IEEE MEMBERS</h3>
@@ -264,17 +385,26 @@ j
               <p>Goodies</p>
             </div>
 
-            <h2>RS.699</h2>
+            <h2 class="rizz">RS.699</h2>
 
-            <a>Register</a>
+            <!-- <a>Register</a> -->
+            <div class="container-button">
+                <div class="hover bt-1"></div>
+                <div class="hover bt-2"></div>
+                <div class="hover bt-3"></div>
+                <div class="hover bt-4"></div>
+                <div class="hover bt-5"></div>
+                <div class="hover bt-6"></div>
+                <button></button>
+              </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <div class="footer">
-      <img src="/Impulse-Website/img/Aasset 5 2.png" width="100%" />
+    <div class="footer" class="parallax-section">
+      <img src="/img/Aasset.png" width="100%" />
       <div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.3724180597765!2d76.40626477532166!3d10.231517589886055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08068aa17bd247%3A0xf048b9ebcbd2af28!2sFederal%20Institute%20of%20Science%20And%20Technology%20(FISAT)%C2%AE!5e0!3m2!1sen!2sin!4v1715874732686!5m2!1sen!2sin"
@@ -300,12 +430,14 @@ j
           <h4>Follow Us</h4>
           <p>5533333</p>
         </div>
-        <div>address</div>
+        <div>Hormis Nagar, Mookkannoor
+           <br> Angamaly, Kerala</div>
+        
       </div>
 
       <div class="rights">
-        <p>IMPULSE 2024 ALL RIGHTS RECIEVED</p>
-        <p>IEEE FISAT SB</p>
+        <p> &copy; Copyright IEEE FISAT SB. All Rights Reserved</p>
+        <a href="https://www.ieee.fisat.ac.in/webcom.html" id="webcom"><p>Designed with Love 💞 IEEE FISAT SB WebCom</p></a>
       </div>
     </div>
   </body>
