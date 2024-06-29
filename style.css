@@ -944,6 +944,10 @@ button::after {
   justify-content: space-evenly;
   margin-top: 20px;
 }
+.fcontent div a{
+  text-decoration: none;
+  color: white;
+}
 
 .footer .fcontent div a:hover{
   cursor: pointer;
