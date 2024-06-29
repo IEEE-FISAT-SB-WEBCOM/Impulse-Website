@@ -187,7 +187,7 @@ button::after {
 }
 .nav {
   background: #000;
-  width: 95%;
+  width: 92%;
   height: 125px;
   display: flex;
   flex-direction: row;
@@ -216,9 +216,7 @@ button::after {
 
 .nav .menu a {
   padding: 10px 40px;
-  background: #34000c;
- 
-
+  background: #610017;
 }
 
 .nav .menu i {
@@ -239,7 +237,7 @@ button::after {
   flex-direction: row;
   place-items: center;
  padding: 100px;
- z-index: 100;
+  z-index: 200;
   position: fixed;
   top: -800px;
   justify-content: space-between;
@@ -271,7 +269,177 @@ button::after {
 .open-menu .list ul li{
   cursor: pointer;
 }
+@media (max-width: 540px) {
+  .nav {
+    background: #000;
+    width:100%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    padding: 0 32.5px;
+    color: white;
+    justify-content: space-between;
+    margin: 0 auto; 
+  }
+  .nav logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+  }
+  .nav img {
+    width: 200px;
+    height: auto;
+  }
+  .nav .menu {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 25px;
+  }
+  
+  .nav .menu a {
+    display: none;
+   
+  }
+  
+  .nav .menu i {
+    font-size: xx-large;
+  }
+  .nav .menu i, a:hover {
+    cursor: pointer;
+  }
+  
+  .open-menu {
+    transform: translate(-10%, 0); 
+    background: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    padding: 100px;
+    z-index: 200;
+    position: fixed;
+    top: -800px;
+    justify-content: space-between;
+    transition: top 0.5s ease;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .open-menu i {
+    font-size: 200px;
+    color: white;
+  }
+  .open-menu.show {
+    display: flex;
+    top: 0;
+    margin-top: 100px;
+  }
+  .open-menu i:hover {
+    cursor: pointer;
+  }
+  
+  .open-menu .list ul {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 30px;
+    font-size: 40px;
+  }
+  .open-menu .list ul li {
+    cursor: pointer;
+  }
+}
 
+@media (max-width: 912px) {
+  .nav {
+    background: #000;
+    width: 92%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    padding: 0 32.5px;
+    color: white;
+    justify-content: space-between;
+    margin: 0 auto; 
+  }
+  .nav logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+  }
+  .nav img {
+    width: 200px;
+    height: auto;
+  }
+  .nav .menu {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 25px;
+  }
+  
+  .nav .menu a {
+    padding: 10px 40px;
+    background: #610017;
+  }
+  
+  .nav .menu i {
+    font-size: xx-large;
+  }
+  .nav .menu i, a:hover {
+    cursor: pointer;
+  }
+  
+  .open-menu {
+    transform: translate(-10%, 0); 
+    background: black;
+    width: 70%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    padding: 100px;
+    z-index: 200;
+    position: fixed;
+    top: -800px;
+    justify-content: space-between;
+    transition: top 0.5s ease;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .open-menu i {
+    font-size: 200px;
+    color: white;
+  }
+  .open-menu.show {
+    display: flex;
+    top: 0;
+    margin-top: 100px;
+  }
+  .open-menu i:hover {
+    cursor: pointer;
+  }
+  
+  .open-menu .list ul {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 30px;
+    font-size: 40px;
+  }
+  .open-menu .list ul li {
+    cursor: pointer;
+  }
+}
 
 
 /* Hero section */
@@ -703,7 +871,7 @@ button::after {
 .footer {
   background: #000;
   font-family: "Poppins", sans-serif;
-  height: 1000px;
+  height: 900px;
   display: flex;
   flex-direction: column;
   color: white;
@@ -736,6 +904,134 @@ button::after {
   width: 88%;
   flex-direction: row;
   justify-content: space-between;
+}
+.map{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  
+}
+.footer iframe{
+  height: 80%;
+  width: 80%;
+
+}
+
+@media (max-width: 600px){
+
+  .footer {
+    background: #000;
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    width: 100%;
+    place-items: center;
+  }
+  .footer img {
+    translate: 0px -50px;
+  }
+  
+  .footer-content {
+    margin-top: 100px;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    bottom: 0;
+    gap: 35px;
+    flex-direction: column ;
+    place-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .footer-content p {
+    color: rgb(134, 134, 134);
+    font-size: small;
+    margin-top: 20px;
+  }
+  .footer .rights {
+    height: 10%;
+    font-size: 10px;
+    margin-top: 50px;
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .map{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    
+  }
+  .fcontent{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+
+  }
+  .footer iframe{
+    height: 60%;
+    width: 85%;
+  
+  }
+
+}
+
+@media (max-width: 912px){
+  .footer img {
+    translate: 0px -70px;
+  }
+  
+  .footer-content {
+    margin-top: 100px;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    bottom: 0;
+    gap: 35px;
+    flex-direction: column ;
+    place-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .footer-content p {
+    color: rgb(134, 134, 134);
+    font-size: small;
+    margin-top: 20px;
+  }
+  .footer .rights {
+    height: 10%;
+    font-size: 10px;
+    margin-top: 50px;
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .map{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    
+  }
+  .fcontent{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+
+  }
+  .footer iframe{
+    height: 60%;
+    width: 85%;
+  
+  }
+
 }
 
 #gsw{
