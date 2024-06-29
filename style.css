@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 #webcom{
@@ -245,6 +246,7 @@ button::after {
   visibility: hidden;
   opacity: 0;
 }
+
 .open-menu i{
   font-size: 350px;
   color: white;
@@ -267,7 +269,13 @@ button::after {
   font-size: 40px;
 }
 .open-menu .list ul li{
+
   cursor: pointer;
+}
+.open-menu .list ul li a{
+  text-decoration: none;
+  color: white;
+
 }
 @media (max-width: 540px) {
   .nav {
@@ -520,15 +528,25 @@ button::after {
   font-size: 2em;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .speakerlist{
     flex-direction: column;
+    width: 100%;
+    height: 100%;
   }
+  .speakercard {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative; 
+    overflow: hidden; 
+  }
+  
 }
 
-@media (max-width: 850px){
 
-}
 
 
 
@@ -916,6 +934,19 @@ button::after {
   height: 80%;
   width: 80%;
 
+}
+
+.footer .fcontent div{
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  place-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.footer .fcontent div a:hover{
+  cursor: pointer;
 }
 
 @media (max-width: 600px){
