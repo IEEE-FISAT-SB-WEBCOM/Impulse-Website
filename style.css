@@ -961,8 +961,7 @@ button::after {
 /* Footer */
 .footer {
   /* bottom: 0 !important; */
-  border: 1px solid white;
-  bottom: 0;
+  padding-bottom: 10px;
   background: #000;
   font-family: "Poppins", sans-serif;
   height: max-content;
