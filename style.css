@@ -66,10 +66,9 @@ body{
   margin: 0 !important ;
   padding: 0 !important ;
   margin-bottom: 0 !important;
-  border: 1px solid purple;
   width: 100vw;
   overflow-x: hidden;
-  max-height: min-content;
+  /* max-height: min-content; */
 }
 .hover {
   position: absolute;
@@ -963,7 +962,7 @@ button::after {
   bottom: 0 !important;
   background: #000;
   font-family: "Poppins", sans-serif;
-  height: 900px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   color: white;
