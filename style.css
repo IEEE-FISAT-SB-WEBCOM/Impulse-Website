@@ -4,6 +4,10 @@
   scroll-behavior: smooth;
 }
 
+
+body{
+  overflow-x: hidden;
+}
 a{
   text-decoration: none;
   color: white;
@@ -38,8 +42,16 @@ a{
 #webcom{
   text-decoration: none;
   color: white;
+  font-size: 15px;
+  position: relative;
+  left: -45px;
+  top:-52px;
 }
-
+#all{
+  position: relative;
+  top: 36px;
+  left: -600px;
+}
 #webcom:hover{
   text-decoration: none;
   color: red;
@@ -295,6 +307,7 @@ button::after {
   display: flex;
   top: 0; 
   margin-top: 100px;
+  position: absolute;
 }
 .open-menu i:hover{
   cursor: pointer;
@@ -316,13 +329,41 @@ button::after {
   text-decoration: none;
   color: white;
   position: relative;
-  left: -236px;
+  left: 30px;
 }
 
 @media (max-width: 912px) {
+   #all{
+    position: relative;
+    right: -37px;
+      top: 18px;
+      font-size: 10px;
+  }
+  #webcom{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    position: relative;
+    left: -70px;
+    top: 0px;
+  }
+  
+  #des{
+    font-size: 15px;
+    position: relative;
+    top: 0px;
+    right: -90px;
+}
+  
+    .open-menu .list ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: -225px;
+  }
   .nav {
     background: #000;
-    width: 100%;
+    width: 83%;
     height: 125px;
     display: flex;
     flex-direction: row;
@@ -971,6 +1012,9 @@ button::after {
   align-items: center;
   overflow: hidden;
   width: 100%;
+   position: relative;
+  top: 89px;
+}
 }
 .footer img {
   translate: 0px -150px;
@@ -985,6 +1029,8 @@ button::after {
   gap: 180px;
   flex-direction: row;
   justify-content: space-evenly;
+    position: relative;
+  top: -40px;
 }
 
 .footer-content p {
@@ -998,6 +1044,9 @@ button::after {
   width: 88%;
   flex-direction: row;
   justify-content: space-between;
+    position: relative;
+  top: -40px;
+  font-size: 23px;
 }
 .map{
   width: 100%;
@@ -1113,6 +1162,9 @@ button::after {
 @media (max-width: 912px){
 
   .footer img {
+    height: 91px;
+    top: -19px;
+    position: relative;
     translate: 0px -70px;
   }
   
