@@ -11,6 +11,10 @@ body{
     place-items: center;
     background: #000;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 
 .nav {
     background: #000;
@@ -144,6 +148,11 @@ body{
     height: 300px;
     margin: 90px 0;
     
+}
+
+.content p{
+  line-height: 30px;
+  margin-top: 20px;
 }
 
 
