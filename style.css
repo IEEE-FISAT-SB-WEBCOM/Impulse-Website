@@ -303,7 +303,8 @@ button::after {
 .open-menu .list ul li a{
   text-decoration: none;
   color: white;
-
+  position: relative;
+  left: -236px;
 }
 @media (max-width: 540px) {
   #iframe-frame {
@@ -380,11 +381,19 @@ button::after {
   .open-menu i {
     font-size: 200px;
     color: white;
+    position: relative;
+    top: -146px;
+    left: 115px;
   }
   .open-menu.show {
     display: flex;
     top: 0;
     margin-top: 100px;
+    z-index: 10000;
+    position: fixed;
+    left: -55px;
+    top: 25px;
+    height: 246px;
   }
   .open-menu i:hover {
     cursor: pointer;
@@ -471,6 +480,11 @@ button::after {
     display: flex;
     top: 0;
     margin-top: 100px;
+    z-index: 10000;
+    position: fixed;
+        left: -55px;
+        top: 25px;
+        height: 246px;
   }
   .open-menu i:hover {
     cursor: pointer;
@@ -935,6 +949,18 @@ button::after {
 }
 
 @media (max-width: 600px) {
+/* 
+  #ourr{
+    position: relative;
+    left:-137px;
+  }
+  }
+
+  #hashh{
+    position: relative;
+    left:-156px;
+  } */
+  
   .workshop .heading {
     grid-template-columns: repeat(8, 25px);
     grid-template-rows: repeat(4, 30px);
