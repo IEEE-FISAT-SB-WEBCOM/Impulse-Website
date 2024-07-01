@@ -48,7 +48,8 @@ body{
   top: 36px;
   left: -600px;
 }
-  font-size: 15px;
+#des{  
+font-size: 15px;
   position: relative;
   left: -45px;
   top:-52px;
@@ -566,7 +567,6 @@ button::after {
   .open-menu .list ul li {
     cursor: pointer;
   }
-
 }
 
 /* Hero section */
@@ -1052,8 +1052,6 @@ button::after {
   align-items: center;
   overflow: hidden;
   width: 100%;
-  position: relative;
-  top: 89px;
 }
 .footer img {
   translate: 0px -150px;
@@ -1068,8 +1066,6 @@ button::after {
   gap: 180px;
   flex-direction: row;
   justify-content: space-evenly;
-  position: relative;
-  top: -40px;
 }
 
 .footer-content p {
@@ -1083,9 +1079,6 @@ button::after {
   width: 88%;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
-  top: -40px;
-  font-size: 23px;
 }
 .map{
   width: 100%;
@@ -1201,9 +1194,6 @@ button::after {
 @media (max-width: 912px){
 
   .footer img {
-    height: 91px;
-    top: -19px;
-    position: relative;
     height: 91px;
     top: -19px;
     position: relative;
