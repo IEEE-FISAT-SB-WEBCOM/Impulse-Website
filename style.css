@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  /* overflow: hidden; */
 }
 
 
@@ -415,7 +416,7 @@ button::after {
 @media (max-width: 912px) {
   .nav {
     background: #000;
-    width: 85%;
+    width: 82%;
     height: 125px;
     display: flex;
     flex-direction: row;
