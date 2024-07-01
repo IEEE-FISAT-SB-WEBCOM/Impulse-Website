@@ -68,6 +68,7 @@ body{
   margin-bottom: 0 !important;
   width: 100vw;
   overflow-x: hidden;
+  background-color: #000;
   /* max-height: min-content; */
 }
 .hover {
@@ -226,7 +227,7 @@ button::after {
 }
 .nav {
   background: #000;
-  width: 100%;
+  width: calc(100%-40px);
   height: 80px;
   display: flex;
   flex-direction: row;
@@ -959,14 +960,17 @@ button::after {
 
 /* Footer */
 .footer {
-  bottom: 0 !important;
+  /* bottom: 0 !important; */
+  border: 1px solid white;
+  bottom: 0;
   background: #000;
   font-family: "Poppins", sans-serif;
-  height: fit-content;
+  height: max-content;
   display: flex;
   flex-direction: column;
   color: white;
   align-items: center;
+  overflow: hidden;
   width: 100%;
 }
 .footer img {
@@ -1048,7 +1052,7 @@ button::after {
   .footer {
     background: #000;
     font-family: "Poppins", sans-serif;
-    height: 100%;
+    max-height: fit-content;
     display: flex;
     flex-direction: column;
     color: white;
