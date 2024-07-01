@@ -4,6 +4,25 @@
   scroll-behavior: smooth;
 }
 
+
+#iframe-frame {
+  border: 0;
+  width: 600px;
+  height: 400px;
+  z-index: 50;
+  
+}
+
+.iframe-container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  z-index: 50;
+  background-color: black;
+  overflow: hidden;
+ 
+}
+
 #webcom{
   text-decoration: none;
   color: white;
@@ -188,14 +207,15 @@ button::after {
 }
 .nav {
   background: #000;
-  width: 92%;
-  height: 125px;
+  width: 93%;
+  height: 80px;
   display: flex;
   flex-direction: row;
   place-items: center;
   padding: 0 57.5px;
   color: white;
   justify-content: space-between;
+  z-index: 600;
 }
 .nav logo {
   display: flex;
@@ -366,7 +386,7 @@ button::after {
 @media (max-width: 912px) {
   .nav {
     background: #000;
-    width: 92%;
+    width: 85%;
     height: 125px;
     display: flex;
     flex-direction: row;
@@ -452,12 +472,13 @@ button::after {
 
 /* Hero section */
 #hero{
-  background-image: url(/img/Frame\ 44.png);
+  background-image: url(/img/bg\ impulse.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
   padding: 50px;
+
 }
 
 .herolist {
@@ -936,6 +957,12 @@ button::after {
 
 }
 
+
+
+#frame{
+  position: relative;
+  top: 300px;
+}
 .footer .fcontent div{
   display: flex;
   gap: 20px;
@@ -1054,6 +1081,11 @@ button::after {
     justify-content: center;
     height: 50%;
     
+  }
+
+  #frame{
+      position: relative;
+      top: 300px;
   }
   .fcontent{
     display: flex;

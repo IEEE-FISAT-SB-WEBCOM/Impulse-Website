@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
   <meta content="" name="keywords" />
   <meta content="" name="description" />
   <title>Impulse 5.0</title>
@@ -28,15 +28,12 @@
   <!-- Navbar -->
   <nav class="nav">
     <div class="logo">
-      <img src="/Impulse-Website/img/Aasset.png" />
+      <img src="/img/Aasset.png" />
     </div>
     <div class="menu">
       <a>Register</a>
       <i class="fa-solid fa-bars toggle-menu"></i>
     </div>
-
-
-
   </nav>
 
   <div class="open-menu">
@@ -55,7 +52,7 @@
   </div>
 
   <!-- Hero section -->
-  <section id="hero" class="hero" class="parallax-section">
+  <section id="hero" class="parallax-section">
     <div class="content" class="speakercard">
       <div class="marqueee">
         <img src="img/strip.png" alt="Scrolling Image" class="scrolling-imagee" />
@@ -64,34 +61,39 @@
         <img src="img/strip.png" alt="Scrolling Image" class="scrolling-imagee" />
       </div>
       <div class="herolist">
-        <div class="iframe-container">
-          <iframe src="/img/Rectangle 1514.png" style="border: 0; width: 600px; height: 400px; z-index: 50;"
-            frameborder="0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="iframe-container" id="rec">
+          <iframe src="/img/Rectangle 1514.png"
+          class="iframe-frame"
+          frameborder="0" 
+          allowfullscreen 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade" 
+          id="frame"></iframe>
         </div>
       </div>
       <div class="marquee">
-        <img src="img/Aasset.png" alt="Scrolling Image" class="scrolling-image" />
+        <img src="img/Aasset.png" alt="Scrolling Image" class="scrolling-image" id="recc"/>
       </div>
     </div>
   </section>
 
   <style>
-    .iframe-container {
+    /* .iframe-container {
       position: relative;
       width: 600px;
       height: 400px;
       z-index: 50;
       background-color: black;
       overflow: hidden;
-      /* Ensure content doesn't overflow outside */
-    }
+     
+    } */
 
     .marqueee {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: 94%;
       overflow: hidden;
       transform: rotate(15deg);
       z-index: 1;
@@ -99,14 +101,14 @@
     }
 
     .marqueeee {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      transform: rotate(345deg);
-      z-index: 1;
+    position: absolute;
+    top: 0px;
+    left:-20px;
+    width: 100%;
+    height: 94%;
+    overflow: hidden;
+    transform: rotate(345deg);
+    z-index: 2;
       /* Ensure the marquee is behind the iframe */
     }
 
@@ -138,14 +140,7 @@
       }
     }
 
-    /* @keyframes scroll {
-  0% {
-    transform: translate(-50%, 0%) rotate(45deg);
-  }
-  100% {
-    transform: translate(-50%, 50%) rotate(45deg);
-  }
-} */
+  
     .marquee {
       overflow: hidden;
       white-space: nowrap;
@@ -156,6 +151,73 @@
       animation: scroll 5s linear infinite;
       transform: rotate(45deg);
     }
+
+    @media (max-width: 768px) {
+
+      #recc{
+        width: 400px;
+        height: 100px;
+      }
+      .iframe-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    position: relative;
+    top: -270px;
+  }
+
+      .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .marqueee, .marqueeee {
+        height: 50%;
+      }
+
+      .scrolling-imagee {
+        top: 300px;
+        height: 10%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #recc{
+        width: 400px;
+        height: 100px;
+      }
+      .iframe-container {
+        width: 100%;
+        height:30px;
+        padding-bottom: 56.25%;
+      }
+
+      .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .marqueee, .marqueeee {
+        height: 40%;
+        top: 373px;
+        left: 7px;
+        width: 495px;
+      }
+
+      .scrolling-imagee {
+        top: 250px;
+        height: 23%;
+      }
+    }
+
+
   </style>
 
 
@@ -418,8 +480,8 @@
   </section>
 
   <!-- Footer -->
-  <div id="footer" class="footer">
-    <img src="/Impulse-Website/img/Aasset 5 2.png" width="100%" />
+  <div class="footer">
+    <img src="/img/Aasset.png" width="100%" />
     <div class="map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.3724180597765!2d76.40626477532166!3d10.231517589886055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08068aa17bd247%3A0xf048b9ebcbd2af28!2sFederal%20Institute%20of%20Science%20And%20Technology%20(FISAT)%C2%AE!5e0!3m2!1sen!2sin!4v1715874732686!5m2!1sen!2sin"
