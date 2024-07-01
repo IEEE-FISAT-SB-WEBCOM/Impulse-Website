@@ -1,10 +1,13 @@
-* {
+*{
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  /* overflow: hidden; */
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
 
 #asset{
   z-index: 1000;
@@ -59,7 +62,11 @@
 .container-button:active {
   transform: scale(0.95);
 }
-
+.body{
+  margin: 0 !important ;
+  padding: 0 !important ;
+  margin-bottom: 0 !important;
+}
 .hover {
   position: absolute;
   width: 100%;
@@ -307,32 +314,21 @@ button::after {
   position: relative;
   left: -236px;
 }
-@media (max-width: 540px) {
-  #iframe-frame {
-  border: 0;
-  width: 600px;
-  height: 400px;
-  z-index: 50;
-  padding-bottom: 240px;
 
-}
-  #img{
-    width: 60px;
-    height: 40px;
-  }
+@media (max-width: 912px) {
   .nav {
     background: #000;
-    width:100%;
+    width: 100%;
     height: 125px;
     display: flex;
     flex-direction: row;
     place-items: center;
-    padding: 0 32.5px;
+    padding: 0;
     color: white;
     justify-content: space-between;
     margin: 0 auto; 
   }
-  .nav logo {
+  .nav .logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -344,37 +340,34 @@ button::after {
     height: auto;
   }
   .nav .menu {
+    margin-right: 25px;
     display: flex;
     justify-content: center;
     align-content: center;
     gap: 25px;
   }
-  
   .nav .menu a {
-    display: none;
-   
+    padding: 10px 40px;
+    background: #610017;
   }
-  
   .nav .menu i {
     font-size: xx-large;
   }
   .nav .menu i, a:hover {
     cursor: pointer;
   }
-  
   .open-menu {
-    transform: translate(-10%, 0); 
-    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row;
-    place-items: center;
-    padding: 100px;
+    flex-direction: column;
+    align-items: center;
     z-index: 200;
-    position: fixed;
-    top: -800px;
-    justify-content: space-between;
     transition: top 0.5s ease;
     visibility: hidden;
     opacity: 0;
@@ -382,24 +375,24 @@ button::after {
   .open-menu i {
     font-size: 200px;
     color: white;
-    position: relative;
-    top: -146px;
-    left: 115px;
   }
   .open-menu.show {
     display: flex;
-    top: 0;
-    margin-top: 100px;
+    flex-direction: row;
+    place-items: center;
+    transition: top 0.5s ease;
+
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-61%, -90%);
     z-index: 10000;
-    position:absolute;
-    left: -55px;
-    top: 25px;
-    height: 246px;
+    position: fixed;
+    height: 300px;
   }
   .open-menu i:hover {
     cursor: pointer;
   }
-  
   .open-menu .list ul {
     color: white;
     display: flex;
@@ -407,57 +400,15 @@ button::after {
     list-style: none;
     gap: 30px;
     font-size: 40px;
+    margin-left: 500px;
   }
   .open-menu .list ul li {
     cursor: pointer;
   }
 }
 
-@media (max-width: 912px) {
-  .nav {
-    background: #000;
-    width: 82%;
-    height: 125px;
-    display: flex;
-    flex-direction: row;
-    place-items: center;
-    padding: 0 32.5px;
-    color: white;
-    justify-content: space-between;
-    margin: 0 auto; 
-  }
-  .nav logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: inherit;
-  }
-  .nav img {
-    width: 200px;
-    height: auto;
-  }
-  .nav .menu {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    gap: 25px;
-  }
-  
-  .nav .menu a {
-    padding: 10px 40px;
-    background: #610017;
-  }
-  
-  .nav .menu i {
-    font-size: xx-large;
-  }
-  .nav .menu i, a:hover {
-    cursor: pointer;
-  }
-  
+@media (max-width:820px){
   .open-menu {
-    transform: translate(-10%, 0); 
     background: black;
     width: 70%;
     height: 300px;
@@ -468,6 +419,8 @@ button::after {
     z-index: 200;
     position: fixed;
     top: -800px;
+    left: 50%;
+    transform: translate(-63%, -90%);
     justify-content: space-between;
     transition: top 0.5s ease;
     visibility: hidden;
@@ -479,31 +432,57 @@ button::after {
   }
   .open-menu.show {
     display: flex;
-    top: 0;
-    margin-top: 100px;
+    flex-direction: row;
+    place-items: center;
+    transition: top 0.5s ease;
+
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-64%, -90%);
     z-index: 10000;
-    position: absolute;
-        left: -55px;
-        top: 25px;
-        height: 246px;
-  }
-  .open-menu i:hover {
-    cursor: pointer;
-  }
-  
-  .open-menu .list ul {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    gap: 30px;
-    font-size: 40px;
-  }
-  .open-menu .list ul li {
-    cursor: pointer;
+    position: fixed;
+    height: 300px;
   }
 }
+@media (maxwidth:768px){
+  .open-menu {
+    background: black;
+    width: 70%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    padding: 100px;
+    z-index: 200;
+    position: fixed;
+    top: -800px;
+    left: 50%;
+    transform: translate(-64%, -90%);
+    justify-content: space-between;
+    transition: top 0.5s ease;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .open-menu i {
+    font-size: 200px;
+    color: white;
+  }
+  .open-menu.show {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    transition: top 0.5s ease;
 
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-63%, -90%);
+    z-index: 10000;
+    position: fixed;
+    height: 300px;
+  }
+}
 
 /* Hero section */
 #hero{
@@ -928,7 +907,7 @@ button::after {
   padding-bottom: 5px;
 }
 
-.price-cards .card a {
+/* .price-cards .card a {
   margin: 30px 0;
   background: #900022;
   padding: 10px 55px;
@@ -940,7 +919,7 @@ button::after {
   cursor: pointer;
   background: white;
   color: black;
-}
+} */
 .price-cards .card-content {
   display: flex;
   flex-direction: column;
@@ -977,6 +956,7 @@ button::after {
 
 /* Footer */
 .footer {
+  bottom: 0 !important;
   background: #000;
   font-family: "Poppins", sans-serif;
   height: 900px;
