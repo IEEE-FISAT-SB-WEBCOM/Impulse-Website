@@ -62,10 +62,14 @@ a{
 .container-button:active {
   transform: scale(0.95);
 }
-.body{
+body{
   margin: 0 !important ;
   padding: 0 !important ;
   margin-bottom: 0 !important;
+  border: 1px solid purple;
+  width: 100vw;
+  overflow-x: hidden;
+  max-height: min-content;
 }
 .hover {
   position: absolute;
