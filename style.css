@@ -331,7 +331,18 @@
       position: relative;
       left:-705px;
     }
-    
+
+
+      
+    #ourr{
+      position: relative;
+      left: -137px;
+    }
+
+    #hashh{
+      position: relative;
+      left: -139px;
+    }
     .nav {
       background: #000;
       width: 100%;
