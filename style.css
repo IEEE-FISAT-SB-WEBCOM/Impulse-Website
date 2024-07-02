@@ -599,6 +599,17 @@
     font-size: 2em;
   }
   
+
+  .footerRights{
+    width:90%;
+    /* border: 1px solid white; */
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
   @media (max-width: 768px) {
     #hero{
       background-image: url(img/bg\ impulse.png);
@@ -608,6 +619,19 @@
       height:441px;
       padding: 50px;
     
+    }
+
+    .footerRights{
+      width:90%;
+      /* border: 1px solid white; */
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 10px;
+      font-weight: 300;
+  
     }
   
     #her{
@@ -1035,6 +1059,7 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
   .map{
     width: 100%;
     display: flex;
@@ -1129,6 +1154,7 @@
       flex-direction: row;
       justify-content: space-between;
     }
+
     .map{
       width: 100%;
       display: flex;
@@ -1200,6 +1226,7 @@
       flex-direction: row;
       justify-content: space-between;
     }
+
     .map{
       width: 100%;
       display: flex;
