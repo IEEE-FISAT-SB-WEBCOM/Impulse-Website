@@ -1001,13 +1001,14 @@
     flex-direction: column;
     color: white;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100%;
   }
   .footer img {
-    translate: 0px -150px;
+    translate: 0px -165px;
     position: relative;
-    top: 165px;
+    /* top: 165px; */
+
   
   }
   
