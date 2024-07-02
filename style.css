@@ -551,6 +551,10 @@
   
   
   /* Speakers */
+  #Speakers{
+    background-image: none;
+  }
+
   .speakerlist {
     width: 100%;
     height: 700px;
@@ -681,13 +685,13 @@
   
   
   .Event {
-    background-color: #34000c;
+    background-color: #000;
     height: 100%;
     margin: 0;
   }
   
   .Events {
-    background-color: #34000c;
+    background-color: #000;
     height: 100%;
     display: flex;
     justify-content: center;
