@@ -145,7 +145,7 @@ a{
       width: 200px;
       height: auto;
       position: relative;
-      left: 20px;
+      left: -10px;
     }
     .nav .menu {
       margin-right: 25px;
@@ -153,6 +153,8 @@ a{
       justify-content: center;
       align-content: center;
       gap: 25px;
+      position: relative;
+      left: -55px;
     }
     .nav .menu a {
       padding: 10px 40px;
@@ -214,6 +216,8 @@ a{
       gap: 30px;
       font-size: 40px;
       margin-left: 500px;
+      position: relative;
+      left: -710px;
     }
     .open-menu .list ul li {
       color: white;
