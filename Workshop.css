@@ -388,7 +388,7 @@ a{
 @media (max-width: 640px) {
 
 .nav {
-  background: #000;
+  background: black;
   width: 89%;
   height: 125px;
   display: flex;
@@ -396,33 +396,90 @@ a{
   place-items: center;
   padding: 0 30px;
   color: white;
+  justify-content: space-around;
+
+}
+.nav .menu i{
+  margin-left: 170px;
+}
+.open-menu.show{
+  color: white;
+
+}
+.open-menu ul li{
+  color: white;
+  z-index: 200;
+}
+.open-menu {
+  background: black;
+  width: 70%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  padding: 100px;
+  z-index: 200;
+  position: fixed;
+  top: -800px;
+  left: 50%;
+  transform: translate(-63%, -90%);
   justify-content: space-between;
+  transition: top 0.5s ease, opacity 0.5s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.open-menu i {
+  font-size: 200px;
+  color: white;
+}
+
+.open-menu.show {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  transition: top 0.5s ease;
+  top: 65%;
+  left: 36%;
+  transform: translate(-64%, -90%);
+  z-index: 10000;
+  position: absolute;
+  height: 300px;
+  width: 188px;
+  visibility: visible; 
+  opacity: 1
+}
+
+.open-menu ul li {
+  display: block;
+  color: white;
 }
     .heading{
         width: 100%;
         height: 200px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         place-items: center;
+        align-items: flex-start;
+        gap: 25px;
     }
     .heading .name{
-        padding: 0 5px;
+        /* padding: 0 5px; */
         font-size: 15px;
-
         display: flex;
         flex-direction: row;
         place-items: center;
         justify-content: flex-start;
-        height: 100%;
-        gap: 50px;
-        width: 50%;
+        height: fit-content;
+        /* gap: 50px; */
+        /* width: 50%; */
     
     }
     .heading .reg{
         padding: 12px 20px;
         background: red;
-        margin-right: 30px;
+        margin-left: 70px;
     }
     
     .heading i{
