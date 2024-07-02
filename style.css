@@ -522,7 +522,7 @@
   
   /* Hero section */
   #hero{
-    background-image: url(img/bg\ impulse.png);
+    background-image: url(img/Background\ here.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -531,9 +531,18 @@
   
   }
   
+
+  #location{
+    color: white;
+    position: relative;
+    top: 110px;
+    left: -290px;
+    font-family:'Segoe UI';
+
+  }
   .herolist {
     width: 100%;
-    height: 713px;
+    height: 340px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -1053,6 +1062,9 @@
   #imgg{
     height:500px;
     width: 500px;
+    position: relative;
+    top: 23px;
+    left: 370px;
   }
   
   

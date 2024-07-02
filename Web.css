@@ -101,6 +101,10 @@ a{
   .open-menu .list ul li{
     cursor: pointer;
   }
+
+  #web{
+    text-align: center;
+  }
   
 
   @media (max-width: 912px) {
