@@ -531,18 +531,39 @@
   
   }
   
+ #log{
+    position: relative;
+   left: 305px;
+   width: 27px;
+   top: 13px;
+
+  }
 
   #location{
     color: white;
-    position: relative;
-    top: 110px;
-    left: -290px;
-    font-family:'Segoe UI';
+   position: relative;
+   top: 13px;
+   left: -290px;
+   font-family: 'Segoe UI';
 
-  }
+
+}
+
+#location:hover{
+  color:rgb(211, 9, 9); 
+}
+
+#collaboration{
+ 
+  width: 490px;
+  position: relative;
+  left: 470px;
+  top: -170px;
+
+}
   .herolist {
     width: 100%;
-    height: 340px;
+    height: 461px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -1152,12 +1173,14 @@
   
   }
   
-  #imgg{
-    height:500px;
+ #imgg{
+ 
+    height: 500px;
     width: 500px;
     position: relative;
-    top: 23px;
-    left: 370px;
+    top: -80px;
+    left: 330px;
+ 
   }
   
   
