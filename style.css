@@ -1403,12 +1403,14 @@
   @media (max-width: 768px) {
     .workshop .shops{
       display: grid;
-      grid-template-columns: repeat(2,auto);
-
+      grid-template-columns: repeat(2,1fr);
+      gap: 25px;
     }
 
-    .workshop .shops div{
-      background: red;
+    .workshop .shops .box{
+      width:170px;
+      margin: 0;
+      padding: 0;
 
     }
     
