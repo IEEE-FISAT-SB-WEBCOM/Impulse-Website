@@ -482,6 +482,7 @@
     }
   }
   @media (maxwidth:768px){
+    
     .open-menu {
       background: black;
       width: 70%;
@@ -643,60 +644,68 @@
     font-size: 15px;
     font-weight: 300;
   }
-
   @media (max-width: 768px) {
-    #hero{
-      background-image: url(img/bg\ impulse.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height:441px;
-      padding: 50px;
-    
+    #hero {
+        background-image: url(img/bg\ impulse.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 441px;
+        padding: 50px;
     }
 
-    .footerRights{
-      width:90%;
-      /* border: 1px solid white; */
-      display: flex;
-      flex-direction: column;
-      padding-top: 10px;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 10px;
-      font-weight: 300;
-  
+    .footerRights {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10px;
+        font-weight: 300;
     }
-  
-    #her{
+
+    #her {
+        width: 100%;
+        height: 10000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        overflow: hidden;
+        top: 20px;
+        z-index: 1600;
+    }
+
+    .speakerlist {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll; 
+        width: 100%; 
+        height: fit-content;
+        gap: 30px;
+    }
+    /* .pricing .content .price-cards{
+      background: red;
       width: 100%;
-      height: 10000px;
+      height: fit-content;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      position: relative; 
-      overflow: hidden; 
-      position: relative;
-      top: 20px;
-      z-index: 1600;
-    }
-    .speakerlist{
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
-    }
+      flex-direction: row;
+      height: fit-content;
+      overflow-x: scroll;
+    } */
+
     .speakercard {
-      width: 100%;
-      height: 500px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      position: relative; 
-      overflow: hidden; 
+        min-width: 300px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        overflow: hidden;
     }
-    
-  }
-  
+}
+
   
   
   
@@ -1282,6 +1291,14 @@
   }
   
   @media (max-width: 912px){
+    .pricing .content .price-cards{
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: row;
+      height: fit-content;
+      overflow-x: scroll;
+    }
     #webcom{
       text-decoration: none;
       color: white;
@@ -1381,3 +1398,26 @@
       translate: 0px -125px;
     }
   }
+
+
+  @media (max-width: 768px) {
+    .price-cards {
+      display: flex !important;
+      overflow-x: scroll;
+      width: 100%;
+      height: 800px !important;
+      flex-direction: column !important;
+      margin: 0;
+      padding: 0;
+      overflow-y: hidden;
+    }
+
+    .price-cards .card{
+      width: 80%;
+    }
+    
+   
+  }
+  
+
+
