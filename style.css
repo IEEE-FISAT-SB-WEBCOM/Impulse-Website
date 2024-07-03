@@ -1171,13 +1171,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 50%;
+    height: 400px;
     position: relative;
     top: 40px;
     
   }
   .footer iframe{
-    height: 80%;
+    height: 100%;
     width: 80%;
   
   }
@@ -1401,6 +1401,17 @@
 
 
   @media (max-width: 768px) {
+    .workshop .shops{
+      display: grid;
+      grid-template-columns: repeat(2,auto);
+
+    }
+
+    .workshop .shops div{
+      background: red;
+
+    }
+    
     .price-cards {
       display: flex !important;
       overflow-x: scroll;
