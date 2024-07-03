@@ -979,8 +979,12 @@
     transition: 1s;
   }
   @media (max-width: 800px) {
+    .workshop .shops{
+      display: grid;
+      grid-template-columns: repeat(2,auto);
+    }
     .shops .box {
-      width: 40%;
+      width: 70%;
     }
     .box h3 {
       font-size: 30px;
@@ -994,35 +998,44 @@
       width: 70%;
     }
   }
-  @media (max-width: 500px) {
-    .workshop .heading {
-      grid-template-columns: repeat(8, 30px);
-      grid-template-rows: repeat(4, 30px);
-      align-self: center;
-    }
-    .workshop .heading img {
-      width: 60px;
-    }
-    .workshop .heading p {
-      font-size: 40px;
-    }
-  
+  @media (max-width: 590px) {
+   
+   
     .shops .box {
+      background-color: #000;
+      margin: 10px;
       width: 80%;
-      height: 200px;
+      height: 180px;
     }
   }
-  @media (max-width: 300px) {
-    .workshop .heading {
-      grid-template-columns: repeat(8, 25px);
-      grid-template-rows: repeat(4, 30px);
+  @media (max-width: 450px) {
+   
+    .box h3
+    {
+      font-size: 24px;
+    }
+    .workshop .shops
+    {
+      margin: 0;
+      grid-template-columns: repeat(2,220px);
       align-self: center;
     }
-    .workshop .heading img {
-      width: 50px;
+    .shops .box
+    {
+      position: relative;
+      left: 5px;
+      margin: 15px;
     }
-    .workshop .heading p {
-      font-size: 30px;
+  }
+  @media (max-width: 400px)
+  {
+    .workshop .shops
+    {
+      grid-template-columns: repeat(2,200px);
+    }
+    .box h3
+    {
+      font-size: 23px;
     }
   }
   .rizz{
@@ -1399,21 +1412,7 @@
     }
   }
 
-
-  @media (max-width: 768px) {
-    .workshop .shops{
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      gap: 25px;
-    }
-
-    .workshop .shops .box{
-      width:170px;
-      margin: 0;
-      padding: 0;
-
-    }
-    
+  @media (max-width: 768px) {   
     .price-cards {
       display: flex !important;
       overflow-x: scroll;
