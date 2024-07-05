@@ -531,7 +531,10 @@
     padding: 50px;
   
   }
-  
+  .heroli
+  {
+    display: none;
+  }
  #log{
     position: relative;
    left: 305px;
@@ -539,7 +542,10 @@
    top: 13px;
 
   }
-
+  .collab
+  {
+    display: none;
+  }
   #location{
     color: white;
    position: relative;
@@ -646,12 +652,56 @@
   }
   @media (max-width: 768px) {
     #hero {
-        background-image: url(img/bg\ impulse.png);
+        background-image: url(img/Frame\ mb.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        height: 441px;
+        height: 100vh;
         padding: 50px;
+    }
+    .hero 
+    {
+      position: relative;
+    }
+    #collaboration
+    {
+      display: none;
+    }
+    .herolist 
+    {
+      display: none;
+    
+    }
+    .heroli
+    {
+      width: 70%;
+      position: absolute;
+      top: 20%;
+      right: 13%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .heroli img
+    {
+      width:500px;
+    }
+    .collab
+    {
+      display: block;
+      width: 450px;
+      position: relative;
+      top: 1200px;
+      left: 15%;
+      right: 15%;
+    }
+    .heroli a
+    {
+      margin: 20px 0;
+      align-self: center;
+      font-size: 1.6rem;
+      font-weight: bold;
     }
 
     .footerRights {
@@ -705,7 +755,42 @@
         overflow: hidden;
     }
 }
+@media (max-width: 660px)
+{
+  .collab
+    {
+      position: relative;
+      top: 90%;
+      left: 8%;
+    }
+} 
 
+
+@media (max-width: 540px) {
+  .heroli
+  {
+    width: 90%;
+    margin: 10px;
+    left: 5%;
+  }
+  .heroli img
+    {
+      width:90%;
+    }
+    .heroli a
+    {
+      
+      font-size: 1.4rem;
+      
+    }
+    .collab
+    {
+      width: 90%;
+      position: relative;
+      top: 90%;
+      left: 9%;
+    }
+}
   
   
   
