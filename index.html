@@ -52,7 +52,7 @@
   </div>
 
   <!-- Hero section -->
-  <section id="hero">
+  <section id="hero" class="hero">
     <div>
       <!-- <div class="marqueee">
         <img src="img/strip.png" alt="Scrolling Image" class="scrolling-imagee" />
@@ -62,7 +62,7 @@
       </div> -->
       <div class="herolist">
       <img src="/img/log.png" alt="" id="log">
-        <img src="img/Impusle logo.svg" alt="" id="imgg">
+        <img src="img/Impusle logo.svg" alt="" id="imgg" class="imp">
        <a href="https://goo.gl/maps/tBmb8zsyPsqyQS1G6"><h1 id="location" class="custom-icon bi-geo-alt me-2">FEDERAL INSTITUTE OF SCIENCE AND TECHNOLOGY,ANGAMALY</h1></a> 
         <!-- <div class="iframe-container" id="rec">
           <iframe 
@@ -76,6 +76,11 @@
         </div> -->
       </div>
     </div>
+    <div class="heroli">
+        <img src="img/Impusle logo.svg" alt=""  class="imp0">
+       <a href="https://goo.gl/maps/tBmb8zsyPsqyQS1G6">FEDERAL INSTITUTE OF SCIENCE AND TECHNOLOGY,ANGAMALY</a> 
+     </div>
+     <img src="img/fbXsb.png" alt="" class="collab">
    <img src="img/fbXsb.png" id="collaboration">
     <div class="marquee">
       <img src="img/Frame 48.png" alt="Scrolling Image" class="scrolling-image" id="recc"/>
@@ -170,14 +175,12 @@
 
     @media (max-width: 768px) {
       .marquee {
-      overflow: hidden;
-      white-space: nowrap;
-      position: relative;
-      top:-350px;
-      width: 300px;
+      display: none;
     }
+    
+   
 
-      #recc{
+       #recc{
         width: 400px;
         height: 100px;
         position: relative;
@@ -192,8 +195,8 @@
         position: relative;
         top:-268px;
         z-index: 1200;
-        /* background: url(/img/impulse.jpeg) no-repeat; */
-      }
+        
+      } 
       .iframe-container{
     width: 100%;
     display: flex;
@@ -311,7 +314,7 @@
           </div>
         </div>
         <div class="logos">
-          <img src="img/SB logo_White.png" alt="" class="SB" />
+          <img src="img/wie-logo_white.png" alt="" class="SB" />
           <img src="img/PES_white.png" alt="" class="PES" />
           <img src="img/SPS_Logo_Color_RGB.png" alt="" class="SPS" />
           <img src="img/IEEE_RAS_logo_no-background-300x110.png" alt="" class="RAS" />
