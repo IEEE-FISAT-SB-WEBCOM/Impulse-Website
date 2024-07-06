@@ -1391,7 +1391,7 @@
   
   }
   
-  @media (max-width: 912px){
+  @media (max-width: 1024px){
     .speakerlist {
       display: flex;
       flex-direction: row;
@@ -1571,21 +1571,61 @@
  
 
 }
-/* .data-block:last-child {
+.data-block:last-child {
   border-right: none;
-} */
+}
 
-.data-block:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  top: 10%;
-  right: 0;
-  height: 80%;
-  width: 1px;
-  background: linear-gradient(
-    to bottom, 
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 0.7) 50%,
-    rgba(255, 255, 255, 0)
-  );
+
+
+@media (max-width:912px){
+  .data{
+    margin-top: 50px;
+  }
+  
+.data-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  font-size: 18px;
+  color: white;
+  padding: 0 70px;
+
+  border-right: 1px solid ;
+ 
+
+}
+
+}
+
+
+@media (max-width:768px){
+  .data{
+    height: 180px;
+    width: 90%;
+    background: #900022;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    place-items: center;
+  
+  }
+  .data-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    font-size: 14px;
+    color: white;
+    padding: 0 10px;
+  
+    border-right: 1px solid ;
+   
+  
+  }
+  
 }
