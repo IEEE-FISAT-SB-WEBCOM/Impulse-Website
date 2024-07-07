@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
       y: -50,
       ease: "power2.inOut",
     });
-  
     // gsap.to(".footer", {
     //   scrollTrigger: {
     //     trigger: ".footer",
