@@ -1733,5 +1733,8 @@
    
   
   }
+  .data-block:last-child{
+    border-right: none;
+  }
   
 }
