@@ -529,7 +529,6 @@
     background-position: center;
     height: 100%;
     padding: 50px;
-  
   }
   .heroli
   {
@@ -652,7 +651,7 @@
   }
   @media (max-width: 768px) {
     #hero {
-        background-image: url(img/Frame\ mb.png);
+        background-image: url(img/Background\ here.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -703,7 +702,10 @@
       font-size: 1.6rem;
       font-weight: bold;
     }
-
+    .heroli .date
+    {
+      margin: 0;
+    }
     .footerRights {
         width: 90%;
         display: flex;
@@ -775,12 +777,12 @@
   }
   .heroli img
     {
-      width:90%;
+      width:100%;
     }
     .heroli a
     {
       
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       
     }
     .collab
@@ -1369,9 +1371,8 @@
   }
   
  #imgg{
- 
-    height: 500px;
-    width: 500px;
+    height: 150px;
+    width: 600px;
     position: relative;
     top: -80px;
     left: 330px;
