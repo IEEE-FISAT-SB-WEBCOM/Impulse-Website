@@ -543,13 +543,6 @@
   {
     display: none;
   }
- #log{
-    position: relative;
-   left: 305px;
-   width: 27px;
-   top: 13px;
-
-  }
   .collab
   {
     display: none;
@@ -560,8 +553,13 @@
    top: 13px;
    left: -290px;
    font-family: 'Segoe UI';
-
-
+}
+#date{
+  color: white;
+ position: absolute;
+ top: 320px;
+ left: 45%;
+ font-family: 'Segoe UI';
 }
 
 #location:hover{
@@ -657,6 +655,16 @@
     justify-content: space-between;
     font-size: 15px;
     font-weight: 300;
+  }
+  @media(max-width:1448px)
+  {
+    #location{
+      color: white;
+     position: absolute;
+     top: 280px;
+     left: 23%;
+     font-family: 'Segoe UI';
+  }
   }
   @media (max-width: 768px) {
     #hero {
