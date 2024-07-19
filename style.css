@@ -631,6 +631,7 @@
   .speakerdet {
     background: white;
     width: 100%;
+    color: #000;
     height: 25%;
     flex-direction: column;
     display: flex;
@@ -643,6 +644,7 @@
   }
   
   .speakerdet h3 {
+    color: #000;
     font-size: 2em;
   }
   
@@ -1632,7 +1634,7 @@
   
   #gsw{
     position: relative;
-    top: -136px;
+    top: -242px;
   }
   
   
