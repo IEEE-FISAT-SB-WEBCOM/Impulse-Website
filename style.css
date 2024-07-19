@@ -645,7 +645,13 @@
   
   .speakerdet h3 {
     color: #000;
+    position: relative;
     font-size: 2em;
+    top: -230px;
+  }
+  .speakerdet p{
+    position: relative;
+    top:-230px;
   }
   
 
@@ -1634,8 +1640,14 @@
   
   #gsw{
     position: relative;
+    top: -200px;
+  }
+
+  #gsww{
+    position: relative;
     top: -242px;
   }
+  
   
   
   #all{
