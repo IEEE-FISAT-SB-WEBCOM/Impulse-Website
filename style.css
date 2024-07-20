@@ -655,7 +655,7 @@
   }
   .speakerdet .ram
   {
-    height: 380px;
+    height: 360px;
   }
   .ram h3{
     position: relative;
@@ -1661,7 +1661,7 @@
   
   #gswr{
     position: relative;
-    top: -215px;
+    top: -205px;
     left: 10px;
   }
   
