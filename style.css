@@ -653,8 +653,19 @@
     position: relative;
     top:-230px;
   }
-  
-
+  .speakerdet .ram
+  {
+    height: 380px;
+  }
+  .ram h3{
+    position: relative;
+    top: -200px;
+  }
+  .ram p
+  {
+    position: relative;
+    top: -200px;
+  }
   .footerRights{
     width:90%;
     /* border: 1px solid white; */
@@ -1648,7 +1659,11 @@
     top: -242px;
   }
   
-  
+  #gswr{
+    position: relative;
+    top: -215px;
+    left: 10px;
+  }
   
   #all{
     position: relative;
