@@ -1664,6 +1664,13 @@
     top: -205px;
     left: 10px;
   }
+  #gsws
+  {
+    height: 400px;
+    position: relative;
+    top: -217px;
+    padding-bottom: 15px;
+  }
   
   #all{
     position: relative;
