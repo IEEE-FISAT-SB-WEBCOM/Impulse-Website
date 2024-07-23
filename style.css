@@ -1549,7 +1549,6 @@
     .speakerlist {
       display: flex;
       flex-direction: row;
-      overflow-x: scroll; 
       width: 100%; 
       height: fit-content;
       gap: 50px;
@@ -1652,17 +1651,20 @@
   #gsw{
     position: relative;
     top: -200px;
+    margin: 5px;
   }
 
   #gsww{
     position: relative;
     top: -242px;
+    margin: 5px;
   }
   
   #gswr{
     position: relative;
     top: -205px;
     left: 10px;
+    margin: 5px;
   }
   #gsws
   {
@@ -1670,6 +1672,7 @@
     position: relative;
     top: -217px;
     padding-bottom: 15px;
+    margin: 5px;
   }
   
   #all{
@@ -1686,18 +1689,18 @@
     }
   }
 
-  @media (max-width: 768px) {   
+  @media (max-width: 800px) {   
     .speakerlist {
       display: flex;
       flex-direction: row;
-      overflow-x: scroll; 
+      flex-wrap: wrap;
       width: 100%; 
       height: fit-content;
       gap: 30px;
+
   }
     .price-cards {
       width: 100%;
-      overflow-x: hidden;
     }
 
     .price-cards .card{
