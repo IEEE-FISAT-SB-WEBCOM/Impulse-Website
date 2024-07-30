@@ -104,7 +104,10 @@ a{
 .registerbtn{
   display: none;
 }
+.registerbtn,.reg:hover{
+  cursor: not-allowed;
 
+}
   @media (max-width: 912px) {
     .open-menu .list ul li a{
       text-decoration: none;
